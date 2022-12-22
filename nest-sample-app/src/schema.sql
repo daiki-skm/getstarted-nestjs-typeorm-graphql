@@ -28,5 +28,5 @@ type Mutation {
 input NewBookInput {
   title: String!
   price: Int!
-  author: [String!]!
+  author: String!
 }

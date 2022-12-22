@@ -4,7 +4,7 @@ import { Book } from './book';
 import { BooksService } from './books.service';
 import { NewBookInput } from './dto/newBook.input';
 
-@Resolver()
+@Resolver((of) => Book)
 export class BooksResolver {
   constructor(private booksService: BooksService) {}
 
